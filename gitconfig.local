@@ -1,0 +1,11 @@
+[alias]
+  l = log --pretty=colored
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[user]
+  name = Christophe Chaudier
+  email = chaudier.christophe@gmail.com
+[http]
+  proxy = http://proxy.tess2i.fr:3128
+[https]
+  proxy = http://dumbproxy.yourcompany.com:8080 
