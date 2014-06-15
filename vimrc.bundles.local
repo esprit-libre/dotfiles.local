@@ -1,0 +1,24 @@
+Bundle 'L9'
+" interface
+Bundle 'bling/vim-airline'
+Bundle 'gcmt/taboo.vim'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'endel/vim-github-colorscheme'
+Bundle 'goatslacker/mango.vim'
+" files
+Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+" code
+Bundle 'godlygeek/tabular'
+Bundle 'tpope/vim-cucumber'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'tpope/vim-abolish'
+" snippet
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+" to retest
+Bundle 'w0ng/vim-hybrid'
+"Bundle 'airblade/vim-gitgutter.git'
