@@ -16,8 +16,6 @@ syntax enable
 hi Normal ctermbg=none
 set background=dark
 colorscheme jellybeans
-"colorscheme distinguished
-"let g:jellybeans_use_lowcolor_black = 0
 autocmd BufRead,BufNewFile *.jbuilder set filetype=Ruby
 autocmd BufRead,BufNewFile *.arb set filetype=Ruby
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
@@ -27,8 +25,6 @@ autocmd BufRead,BufNewFile *.bats set filetype=sh
 
 " nathanaelkane/vim-indent-guides
 let g:indent_guides_auto_colors = 0
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 autocmd ColorScheme * highlight Normal ctermbg=None
 autocmd ColorScheme * highlight NonText ctermbg=None
 hi IndentGuidesOdd  ctermbg=234
@@ -39,11 +35,8 @@ autocmd  FileType * IndentGuidesEnable
 "let mapleader = " "
 map <C-n> :NERDTreeToggle<CR>
 map è :NERDTreeToggle<CR>
-imap ^[OA <ESC>ki
-imap ^[OB <ESC>ji
-imap ^[OC <ESC>li
-imap ^[OD <ESC>hi
-"cursor
+
+"Arrows
 nnoremap <Left> <Left>
 nnoremap <Right> <Right>
 nnoremap <Up> <Up>
