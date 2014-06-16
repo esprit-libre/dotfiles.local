@@ -19,6 +19,7 @@ colorscheme jellybeans
 autocmd BufRead,BufNewFile *.jbuilder set filetype=Ruby
 autocmd BufRead,BufNewFile *.arb set filetype=Ruby
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
+autocmd BufNewFile,BufRead Dockerfile set filetype=sh
 autocmd BufRead,BufNewFile *.lib set filetype=sh
 autocmd BufRead,BufNewFile *.fct set filetype=sh
 autocmd BufRead,BufNewFile *.bats set filetype=sh
