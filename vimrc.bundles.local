@@ -21,4 +21,4 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 " to retest
 Bundle 'w0ng/vim-hybrid'
-"Bundle 'airblade/vim-gitgutter.git'
+Bundle 'airblade/vim-gitgutter'
