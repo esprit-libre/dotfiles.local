@@ -1,0 +1,3 @@
+cd
+rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
+rcup -d dotfiles.local -x README.md -x LICENSE -x install
