@@ -1,27 +1,23 @@
-syntax enable
 filetype plugin indent on
 set mouse=a
+set mouse=nicr
 
-let g:taboo_tab_format = '%m[%N]%f '
+let g:taboo_tab_format = '%m[%N]%f'
 " Power-line
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
+"let g:airline_powerline_fonts = 1
+"let g:airline#extensions#tabline#enabled = 1
 let g:Powerline_symbols = "fancy"
-
-" Leader
-let mapleader = " "
 
 set nocompatible  " Use Vim settings, rather then Vi settings
 
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
-endif
-
 "Syntaxic color
 set t_Co=256
+syntax enable
+hi Normal ctermbg=none
+set background=dark
 colorscheme jellybeans
+"colorscheme distinguished
+"let g:jellybeans_use_lowcolor_black = 0
 autocmd BufRead,BufNewFile *.jbuilder set filetype=Ruby
 autocmd BufRead,BufNewFile *.arb set filetype=Ruby
 autocmd BufNewFile,BufRead Gemfile set filetype=ruby
@@ -29,15 +25,26 @@ autocmd BufRead,BufNewFile *.lib set filetype=sh
 autocmd BufRead,BufNewFile *.fct set filetype=sh
 autocmd BufRead,BufNewFile *.bats set filetype=sh
 
-
-set ts=2 sw=2 et
+" nathanaelkane/vim-indent-guides
+let g:indent_guides_auto_colors = 0
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+autocmd ColorScheme * highlight Normal ctermbg=None
+autocmd ColorScheme * highlight NonText ctermbg=None
 hi IndentGuidesOdd  ctermbg=234
 hi IndentGuidesEven ctermbg=235
 autocmd  FileType * IndentGuidesEnable
-set mouse=nicr
 
+" Leader
+"let mapleader = " "
 map <C-n> :NERDTreeToggle<CR>
-imap <C-n><ESC>:NERDTreeToggle<CR>
-autocmd ColorScheme * highlight Normal ctermbg=None
-autocmd ColorScheme * highlight NonText ctermbg=None
-hi Normal ctermbg=none
+map è :NERDTreeToggle<CR>
+imap ^[OA <ESC>ki
+imap ^[OB <ESC>ji
+imap ^[OC <ESC>li
+imap ^[OD <ESC>hi
+"cursor
+nnoremap <Left> <Left>
+nnoremap <Right> <Right>
+nnoremap <Up> <Up>
+nnoremap <Down> <Down>
