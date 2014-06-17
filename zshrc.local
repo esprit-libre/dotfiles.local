@@ -6,7 +6,7 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
-ZSH_THEME="blinks" #For tessi
+#ZSH_THEME="blinks" #For tessi
 
 alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
@@ -42,7 +42,7 @@ DEFAULT_USER='christophe'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow svn bundler gem docker common-aliases tmux tmuxinator safe-paste vagrant)
+plugins=(git git-flow svn bundler gem docker common-aliases tmux tmuxinator vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
