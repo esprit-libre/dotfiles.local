@@ -1,3 +1,4 @@
 alias tmux='tmux -2'
 alias gf='git flow'
 alias :q='exit'
+alias docker='sudo docker'
