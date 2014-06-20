@@ -1,3 +1,5 @@
 cd
+[ -d dotfiles ] && git pull || git clone git@github.com:thoughtbot/dotfiles.git
+cd
 rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
 rcup -d dotfiles.local -x README.md -x LICENSE -x install
