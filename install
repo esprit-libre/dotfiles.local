@@ -1,5 +1,17 @@
+sudo apt-get install vim curl wget zsh
+chsh -s /bin/zsh
+curl -L http://install.ohmyz.sh | sh
+cd /tmp
+wget https://thoughtbot.github.io/rcm/debs/rcm_1.2.3-1_all.deb
+sudo dpkg -i rcm_1.2.3-1_all.deb
+rm -f rcm_1.2.3-1_all.deb
 cd
-[ -d dotfiles ] && git pull || git clone git@github.com:thoughtbot/dotfiles.git
+if [ -d dotfiles ]; then
+  cd dotfiles
+  git pull
+else
+   git clone git@github.com:thoughtbot/dotfiles.git
+fi
 cd
-rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
 rcup -d dotfiles.local -x README.md -x LICENSE -x install
+rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
