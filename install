@@ -15,3 +15,10 @@ fi
 cd
 rcup -d dotfiles.local -x README.md -x LICENSE -x install
 rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
+
+#Powerline font
+mkdir -p ~/.fonts/ && cd ~/.fonts/ 
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+fc-cache -vf ~/.fonts  
+mkdir -p ~/.config/fontconfig/conf.d/ && cd ~/.config/fontconfig/conf.d/
+wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
