@@ -3,3 +3,5 @@ alias gf='git flow'
 alias :q='exit'
 alias docker='sudo docker'
 alias stv='sudo service minidlna'
+which htop>/dev/null && alias top=htop
+which dfc>/dev/null && alias df=dfc
