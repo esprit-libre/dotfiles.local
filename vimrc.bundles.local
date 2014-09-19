@@ -6,6 +6,7 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'tpope/vim-vividchalk'
 Bundle 'endel/vim-github-colorscheme'
 Bundle 'goatslacker/mango.vim'
+Bundle 'chase/vim-ansible-yaml'
 " files
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
