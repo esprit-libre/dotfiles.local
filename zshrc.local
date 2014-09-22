@@ -6,7 +6,6 @@ ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="agnoster"
-#ZSH_THEME="blinks" #For tessi
 
 alias zshconfig="$EDITOR ~/.zshrc"
 alias ohmyzsh="$EDITOR ~/.oh-my-zsh"
@@ -80,3 +79,8 @@ zle -N zle-line-init
 bindkey '^T' autosuggest-toggle
 # Accept suggestions without leaving insert mode
 bindkey '^f' vi-forward-word
+
+#Proxy conf
+[ -e /etc/profile.d/proxy.sh ] && . /etc/profile.d/proxy.sh
+#.profile
+[ -e ~/.profile ] && . ~/.profile
