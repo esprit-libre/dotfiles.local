@@ -13,8 +13,8 @@ else
    git clone git@github.com:thoughtbot/dotfiles.git
 fi
 cd
-rcup -d dotfiles.local -x README.md -x LICENSE -x install
 rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
+rcup -d dotfiles.local -x README.md -x LICENSE -x install
 
 #Powerline font
 mkdir -p ~/.fonts/ && cd ~/.fonts/ 
@@ -25,7 +25,7 @@ wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols
 
 #OMZ plugin
 cd ~/.oh-my-zsh/custom/plugins
-git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 
 cd
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
