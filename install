@@ -31,10 +31,13 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 cd $HOME/.oh-my-zsh/themes/ 
 curl https://gist.githubusercontent.com/cchaudier/1ac45d7a72babaafb08c/raw/808d596d63f864f7a7a8cc7c7ee6a3f5730398ae/myagnoster.zsh-theme > myagnoster.zsh-theme
 
+#Rbenv
 cd
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 git clone https://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions
 
+#Tmux
 sudo apt-get install -y tmux
+gem install tmuxinator
