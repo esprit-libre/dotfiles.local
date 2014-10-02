@@ -84,3 +84,8 @@ bindkey '^f' vi-forward-word
 [ -e /etc/profile.d/proxy.sh ] && . /etc/profile.d/proxy.sh
 #.profile
 [ -e ~/.profile ] && . ~/.profile
+
+#Update my dotfiles
+dot && gl
+dotl && gl
+
