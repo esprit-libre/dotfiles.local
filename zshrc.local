@@ -86,6 +86,7 @@ bindkey '^f' vi-forward-word
 [ -e ~/.profile ] && . ~/.profile
 
 #Update my dotfiles
+echo "Update of dotfiles"
 dot && gl
 dotl && gl
-
+cd
