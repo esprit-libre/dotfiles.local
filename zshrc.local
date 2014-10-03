@@ -87,6 +87,7 @@ bindkey '^f' vi-forward-word
 
 #Update my dotfiles
 echo "Update of dotfiles"
+wrk_dir=$(pwd)
 dot && gl
 dotl && gl
-cd
+cd $wrk_dir && unset wrk_dir
