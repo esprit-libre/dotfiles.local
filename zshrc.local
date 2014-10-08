@@ -41,7 +41,7 @@ DEFAULT_USER='christophe'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow git-extra svn cp bundler gem docker common-aliases tmux tmuxinator vagrant ssh-agent history vi-mode zsh-syntax-highlighting history-substring-search aws)
+plugins=(git git-flow git-extra svn cp bundler gem docker common-aliases tmux tmuxinator vagrant ssh-agent history vi-mode zsh-syntax-highlighting history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
