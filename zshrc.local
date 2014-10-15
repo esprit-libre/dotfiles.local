@@ -47,7 +47,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=~/.rbenv/shims:$HOME/.rbenv/bin:.:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/tool_kit:$HOM/palette
-export SFLIB=/home/vagrant/.shellfactory/current/lib
+export SFLIB=~/.shellfactory/current/lib
 
 eval "$(rbenv init -)"
 
