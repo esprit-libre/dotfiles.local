@@ -1,5 +1,5 @@
 get_pack() {
-sudo pacman -Syu
+  sudo pacman -Syu $*
 }
 
 get_pack vim curl wget zsh rcm-git
