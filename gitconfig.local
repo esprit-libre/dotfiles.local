@@ -4,4 +4,4 @@
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [user]
   name = Christophe Chaudier
-  email = chaudier.christophe@gmail.com
+  email = devops@cchaudier.fr
