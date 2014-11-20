@@ -13,10 +13,10 @@ function _update_file() {
 }
 
 function _upgrade() {
-  dot
-  git pull --rebase --stat origin master
-  dotl
-  git pull --rebase --stat origin master
+  cd ~/dotfiles
+  git pull
+  cd ~/dotfiles.local
+  git pull
   _update_file
 }
 
@@ -24,18 +24,10 @@ function _upgrade() {
 
 if [ -f $update_file ]; then
   . $update_file
-
-  if [[ -z "$LAST_EPOCH" ]]; then
-    _update_file && return 0;
-  fi
-
+  [[ -z "$LAST_EPOCH" ]] && _update_file && return 0
   epoch_diff=$(($(_current_epoch) - $LAST_EPOCH))
-  if [ $epoch_diff -gt $epoch_target ]; then
-    dload zsh/datetime
-    _upgrade
-  fi
+  [ $epoch_diff -gt $epoch_target ] && _upgrade
 else
   # create the zsh file
   _update_file
 fi
-
