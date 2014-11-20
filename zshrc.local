@@ -86,8 +86,7 @@ bindkey '^f' vi-forward-word
 [ -e ~/.profile ] && . ~/.profile
 
 #Update my dotfiles
-echo "Update of dotfiles"
 wrk_dir=$(pwd)
-dot && gl
-dotl && gl
+dotl && cd tools
+check_for_upgrade.sh
 cd $wrk_dir && unset wrk_dir

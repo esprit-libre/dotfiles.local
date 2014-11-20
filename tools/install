@@ -14,7 +14,7 @@ else
 fi
 cd
 rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
-rcup -d dotfiles.local -x README.md -x LICENSE -x install
+rcup -d dotfiles.local -x README.md -x LICENSE -x tools
 
 #Powerline font
 mkdir -p ~/.fonts/ && cd ~/.fonts/ 
