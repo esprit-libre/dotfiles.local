@@ -1,7 +1,7 @@
 # ~/.tmuxinator/ansible.yml
 
-name: Cosmopolithome
-root: ~/dev/clients/cosmopolithome/cosmosystem
+name: Nightswapping
+root: ~/dev/clients/nightswapping/cosmosystem
 
 # Optional tmux socket
 # socket_name: foo
@@ -32,6 +32,6 @@ windows:
       layout: main-vertical
       panes:
         - vagrant: 
-          - vagrant up
+          - #vagrant up
         - ssh:
           - #empty, will just run plain shell 
