@@ -8,6 +8,7 @@ Bundle 'endel/vim-github-colorscheme'
 Bundle 'goatslacker/mango.vim'
 Bundle 'chase/vim-ansible-yaml'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'evanmiller/nginx-vim-syntax'
 " files
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
