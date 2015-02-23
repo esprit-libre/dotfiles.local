@@ -1,5 +1,4 @@
 alias tmux='tmux -2'
-alias gf='git flow'
 alias :q='exit'
 alias docker='sudo docker'
 alias stv='sudo service minidlna'
@@ -7,3 +6,7 @@ alias dot='cd ~/dotfiles'
 alias dotl='cd ~/dotfiles.local'
 which htop>/dev/null && alias top=htop
 which dfc>/dev/null && alias df=dfc
+
+#Git
+alias gf='git flow'
+alias grm='git rm'
