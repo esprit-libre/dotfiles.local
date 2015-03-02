@@ -10,3 +10,6 @@ which dfc>/dev/null && alias df=dfc
 #Git
 alias gf='git flow'
 alias grm='git rm'
+
+#MFA
+alias myawsotp='oathtool --totp --base32 "ZUT6JUK6GARNBZK7YK3N6LUX7VB27MUNYKLKGMKWQ36QUKEJLRJ6VF4U6RINJPKI"'
