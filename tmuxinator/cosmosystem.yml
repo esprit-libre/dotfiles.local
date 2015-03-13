@@ -1,6 +1,6 @@
 # ~/.tmuxinator/ansible.yml
 
-name: Nightswapping
+name: Nightswapping cosmosystem
 root: ~/dev/clients/nightswapping/cosmosystem
 
 # Optional tmux socket

@@ -1,7 +1,7 @@
 # ~/.tmuxinator/ansible.yml
 
-name: Nightswapping system (DebOps)
-root: ~/dev/clients/nightswapping/system-owncloud
+name: Nightswapping ns-system
+root: ~/dev/clients/nightswapping/ns-system
 
 # Optional tmux socket
 # socket_name: foo
