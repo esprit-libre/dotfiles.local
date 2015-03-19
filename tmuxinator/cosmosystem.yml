@@ -25,7 +25,8 @@ windows:
         - vim: 
           - vim 
         - git: 
-          - workrave &
+          - cd terraform && . awsconnect && cd -
+          - nohup workrave &
           - clear
           - #empty, will just run plain shell 
   - serveur:
