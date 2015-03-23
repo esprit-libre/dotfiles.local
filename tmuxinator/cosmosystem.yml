@@ -28,6 +28,7 @@ windows:
           - cd terraform && . awsconnect && cd -
           - nohup workrave &
           - clear
+          - myawsotp
           - #empty, will just run plain shell 
   - serveur:
       layout: main-vertical
