@@ -41,3 +41,8 @@ git clone https://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions
 #Tmux
 sudo apt-get install -y tmux
 gem install tmuxinator -v 0.6.9
+
+#My bins
+cd ~/.bin
+curl -sL https://asciinema.org/install | sh
+
