@@ -34,6 +34,10 @@ windows:
       layout: main-vertical
       panes:
         - vagrant: 
+          - cd terraform && . awsconnect && cd -
+          - clear
           - #vagrant up
         - ssh:
+          - cd terraform && . awsconnect && cd -
+          - clear
           - #empty, will just run plain shell 
