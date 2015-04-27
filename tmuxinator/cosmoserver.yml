@@ -1,7 +1,8 @@
 # ~/.tmuxinator/ansible.yml
 
-name: Cosmoserver
-root: ~/dev/clients/cosmopolithome/cosmoserver
+name: Nightswapping cosmoserver
+root: ~/dev/clients/nightswapping/cosmoserver
+
 
 # Optional tmux socket
 # socket_name: foo
