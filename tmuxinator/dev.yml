@@ -27,6 +27,7 @@ windows:
         - git: 
           - workrave &
           - clear
+          - ginfowip
           - #empty, will just run plain shell 
   - serveur:
       layout: main-vertical

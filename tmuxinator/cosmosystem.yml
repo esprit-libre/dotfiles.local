@@ -29,6 +29,7 @@ windows:
           - nohup workrave &
           - clear
           - myawsotp
+          - ginfowip
           - #empty, will just run plain shell 
   - serveur:
       layout: main-vertical
