@@ -25,3 +25,11 @@ Plug 'honza/vim-snippets'
 " to retest
 Plug 'w0ng/vim-hybrid'
 Plug 'airblade/vim-gitgutter'
+" Hashivim
+Plug 'hashivim/vim-consul'
+Plug 'hashivim/vim-nomadproject'
+Plug 'hashivim/vim-ottoproject'
+Plug 'hashivim/vim-packer'
+Plug 'hashivim/vim-terraform'
+Plug 'hashivim/vim-vagrant'
+Plug 'hashivim/vim-vaultproject'
