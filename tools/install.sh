@@ -75,4 +75,5 @@ curl -sL https://asciinema.org/install | sh
 
 #Dropbox
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-& ~/.dropbox-dist/dropboxd
+~/.dropbox-dist/dropboxd &
+
