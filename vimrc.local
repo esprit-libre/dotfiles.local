@@ -39,6 +39,7 @@ autocmd  FileType * IndentGuidesEnable
 "let mapleader = " "
 map <C-n> :NERDTreeToggle<CR>
 map è :NERDTreeToggle<CR>
+map œ :NERDTreeToggle<CR>
 
 "Arrows
 nnoremap <Left> <Left>
