@@ -1,4 +1,4 @@
-sudo apt-get install vim curl wget zsh
+sudo apt-get install vim curl wget zsh htop dfc
 chsh -s $(which zsh)
 curl -L http://install.ohmyz.sh | sh
 cd /tmp
