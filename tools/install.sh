@@ -1,4 +1,4 @@
-sudo apt-get install vim curl wget zsh htop dfc
+sudo apt-get install vim curl wget zsh htop dfc git-flow
 chsh -s $(which zsh)
 curl -L http://install.ohmyz.sh | sh
 cd /tmp
@@ -77,3 +77,11 @@ curl -sL https://asciinema.org/install | sh
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd &
 
+#My dev
+cd ~
+mkdir -p dev/clients
+mkdir -p dev/app
+mkdir -p dev/env
+
+#Wallpapers
+sudo apt-get install -y wallch
