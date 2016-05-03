@@ -1,6 +1,5 @@
 alias tmux='tmux -2'
 alias :q='exit'
-alias docker='sudo docker'
 alias stv='sudo service minidlna'
 alias dot='cd ~/dotfiles'
 alias dotl='cd ~/dotfiles.local'
