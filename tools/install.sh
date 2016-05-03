@@ -52,7 +52,7 @@ sudo apt-get update                             && \
 sudo apt-get install tmate
 
 #Docker
-curl -fsSL https://get.docker.com/ | sh
+docker -v || curl -fsSL https://get.docker.com/ | sh
 
 #Vagrant
 mkdir -p /tmp/install_vagrant
@@ -73,3 +73,6 @@ cd /tmp && rm -rf /tmp/install_virtualbox
 cd ~/.bin
 curl -sL https://asciinema.org/install | sh
 
+#Dropbox
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+& ~/.dropbox-dist/dropboxd
