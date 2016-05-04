@@ -1,5 +1,5 @@
 #Zsh
-sudo apt-get install vim curl wget zsh
+sudo apt-get install -y vim curl wget zsh
 chsh -s $(which zsh)
 
 #OhMyZSH
@@ -37,7 +37,7 @@ rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
 rcup -d dotfiles.local -x README.md -x LICENSE -x tools
 
 #Dev tools
-sudo apt-get install htop dfc git-flow
+sudo apt-get install -y htop dfc git-flow
 #Rbenv
 cd
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
