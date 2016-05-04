@@ -1,6 +1,26 @@
-sudo apt-get install vim curl wget zsh htop dfc git-flow
+#Zsh
+sudo apt-get install vim curl wget zsh
 chsh -s $(which zsh)
+
+#OhMyZSH
 curl -L http://install.ohmyz.sh | sh
+#OMZ plugin
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone git://github.com/zsh-users/zsh-autosuggestions
+
+#Powerline font
+mkdir -p ~/.fonts/ && cd ~/.fonts/ 
+wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
+fc-cache -vf ~/.fonts  
+mkdir -p ~/.config/fontconfig/conf.d/ && cd ~/.config/fontconfig/conf.d/
+wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
+
+#OMZ themes
+cd $HOME/.oh-my-zsh/themes/ 
+curl https://gist.githubusercontent.com/cchaudier/1ac45d7a72babaafb08c/raw/808d596d63f864f7a7a8cc7c7ee6a3f5730398ae/myagnoster.zsh-theme > myagnoster.zsh-theme
+
+
 cd /tmp
 wget https://thoughtbot.github.io/rcm/debs/rcm_1.2.3-1_all.deb
 sudo dpkg -i rcm_1.2.3-1_all.deb
@@ -16,22 +36,8 @@ cd
 rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
 rcup -d dotfiles.local -x README.md -x LICENSE -x tools
 
-#Powerline font
-mkdir -p ~/.fonts/ && cd ~/.fonts/ 
-wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
-fc-cache -vf ~/.fonts  
-mkdir -p ~/.config/fontconfig/conf.d/ && cd ~/.config/fontconfig/conf.d/
-wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
-
-#OMZ plugin
-cd ~/.oh-my-zsh/custom/plugins
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-git clone git://github.com/zsh-users/zsh-autosuggestions
-
-#OMZ themes
-cd $HOME/.oh-my-zsh/themes/ 
-curl https://gist.githubusercontent.com/cchaudier/1ac45d7a72babaafb08c/raw/808d596d63f864f7a7a8cc7c7ee6a3f5730398ae/myagnoster.zsh-theme > myagnoster.zsh-theme
-
+#Dev tools
+sudo apt-get install htop dfc git-flow
 #Rbenv
 cd
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
@@ -77,7 +83,7 @@ curl -sL https://asciinema.org/install | sh
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 ~/.dropbox-dist/dropboxd &
 
-#My dev
+#My dev dir
 cd ~
 mkdir -p dev/clients
 mkdir -p dev/app
