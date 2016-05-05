@@ -75,6 +75,15 @@ wget http://download.virtualbox.org/virtualbox/5.0.20/virtualbox-5.0_5.0.20-1069
 sudo dpkg -i virtualbox*.deb
 cd /tmp && rm -rf /tmp/install_virtualbox
 
+#Otto
+mkdir -p /tmp/install_otto
+cd /tmp/install_otto
+wget https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_linux_amd64.zip
+unzip *
+rm *.zip
+sudo mv -f * /usr/bin
+cd /tmp && rm -rf /tmp/install_otto
+
 #My bins
 cd ~/.bin
 curl -sL https://asciinema.org/install | sh
