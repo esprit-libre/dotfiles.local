@@ -1,4 +1,4 @@
-# ~/.tmuxinator/ansible.yml
+# ~/.tmuxinator/terraform.yml
 
 name: My Terraform template
 root: ~/dev/env/my_terraform_template

@@ -1,4 +1,4 @@
-# ~/.tmuxinator/ansible.yml
+# ~/.tmuxinator/it-system.yml
 
 name: Nightswapping IT-system
 root: ~/dev/clients/nightswapping/it-system

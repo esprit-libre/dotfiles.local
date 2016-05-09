@@ -1,4 +1,4 @@
-# ~/.tmuxinator/ansible.yml
+# ~/.tmuxinator/cosmosystem.yml
 
 name: Nightswapping cosmosystem
 root: ~/dev/clients/nightswapping/cosmosystem
@@ -28,7 +28,6 @@ windows:
           - cd terraform && . awsconnect && cd -
           - nohup workrave &
           - clear
-          - myawsotp
           - ginfowip
           - #empty, will just run plain shell 
   - serveur:

@@ -1,4 +1,4 @@
-# ~/.tmuxinator/ansible.yml
+# ~/.tmuxinator/cosmoserver.yml
 
 name: Nightswapping cosmoserver
 root: ~/dev/clients/nightswapping/cosmoserver

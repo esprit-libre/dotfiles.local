@@ -1,4 +1,4 @@
-# ~/.tmuxinator/shellfactory.yml
+# ~/.tmuxinator/dev.yml
 
 name: Developpement
 root: ~/dev
@@ -27,9 +27,8 @@ windows:
         - git: 
           - workrave &
           - clear
-          - ginfowip
           - #empty, will just run plain shell 
-  - serveur:
+  - serveurs:
       layout: main-vertical
       panes:
         - vagrant: 
