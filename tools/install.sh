@@ -49,7 +49,7 @@ rbenv install -l
 
 #Tmux
 sudo apt-get install -y tmux
-gem install tmuxinator -v 0.6.9
+sudo gem install tmuxinator
 
 #tmate.io
 sudo apt-get install software-properties-common && \
