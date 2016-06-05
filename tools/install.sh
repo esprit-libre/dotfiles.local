@@ -100,3 +100,9 @@ mkdir -p dev/env
 
 #Wallpapers
 sudo apt-get install -y wallch
+
+#Nemo
+echo -e "\r"|sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-nightly
+sudo apt-get update
+sudo apt-get install nemo
+xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
