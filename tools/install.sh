@@ -89,8 +89,12 @@ cd ~/.bin
 curl -sL https://asciinema.org/install | sh
 
 #Dropbox
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-~/.dropbox-dist/dropboxd &
+mkdir -p /tmp/install_dropbox
+cd /tmp/install_dropbox
+wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
+sudo dpkg -i *.deb
+cd /tmp && rm -rf /tmp/install_dropbox
+dropbox start -i
 
 #My dev dir
 cd ~
