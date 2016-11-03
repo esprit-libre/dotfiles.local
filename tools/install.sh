@@ -110,3 +110,13 @@ echo -e "\r"|sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-nightly
 sudo apt-get update
 sudo apt-get install nemo
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+
+#Franz (chat client)
+mkdir -p /tmp/meetfranz
+cd /tmp/meetfranz
+wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
+tar -xzf Franz-linux-x64-4.0.4.tgz
+rm -rf Franz-linux-x64-4.0.4.tgz 
+cd /tmp 
+sudo chown -R root:root meetfranz
+sudo mv meetfranz /opt
