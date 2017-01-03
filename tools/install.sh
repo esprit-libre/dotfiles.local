@@ -10,14 +10,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 git clone git://github.com/zsh-users/zsh-autosuggestions
 
 #Powerline font
-mkdir -p ~/.fonts/ && cd ~/.fonts/ 
+mkdir -p ~/.fonts/ && cd ~/.fonts/
 wget https://github.com/Lokaltog/powerline/raw/develop/font/PowerlineSymbols.otf
-fc-cache -vf ~/.fonts  
+fc-cache -vf ~/.fonts
 mkdir -p ~/.config/fontconfig/conf.d/ && cd ~/.config/fontconfig/conf.d/
 wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 
 #OMZ themes
-cd $HOME/.oh-my-zsh/themes/ 
+cd $HOME/.oh-my-zsh/themes/
 curl https://gist.githubusercontent.com/cchaudier/1ac45d7a72babaafb08c/raw/808d596d63f864f7a7a8cc7c7ee6a3f5730398ae/myagnoster.zsh-theme > myagnoster.zsh-theme
 
 
@@ -75,15 +75,6 @@ wget http://download.virtualbox.org/virtualbox/5.0.20/virtualbox-5.0_5.0.20-1069
 sudo dpkg -i virtualbox*.deb
 cd /tmp && rm -rf /tmp/install_virtualbox
 
-#Otto
-mkdir -p /tmp/install_otto
-cd /tmp/install_otto
-wget https://releases.hashicorp.com/otto/0.2.0/otto_0.2.0_linux_amd64.zip
-unzip *
-rm *.zip
-sudo mv -f * /usr/bin
-cd /tmp && rm -rf /tmp/install_otto
-
 #My bins
 cd ~/.bin
 curl -sL https://asciinema.org/install | sh
@@ -116,7 +107,7 @@ mkdir -p /tmp/meetfranz
 cd /tmp/meetfranz
 wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
 tar -xzf Franz-linux-x64-4.0.4.tgz
-rm -rf Franz-linux-x64-4.0.4.tgz 
-cd /tmp 
+rm -rf Franz-linux-x64-4.0.4.tgz
+cd /tmp
 sudo chown -R root:root meetfranz
 sudo mv meetfranz /opt
