@@ -1,7 +1,7 @@
 # ~/.tmuxinator/cosmoserver.yml
 
-name: Noe savoie-route infra
-root: ~/dev/clients/noe/savoie-route.fr/infra
+name: bpifrance hubdigital system
+root: ~/dev/clients/bpifrance/hubdigital/hubsystem
 
 
 # Optional tmux socket
@@ -27,7 +27,6 @@ windows:
           - vim 
         - git: 
           - workrave &
-          - . setup/setenv
           - clear
           - ginfowip
           - #empty, will just run plain shell 
@@ -36,7 +35,5 @@ windows:
       panes:
         - vagrant: 
           - #vagrant up
-          - . setup/setenv
         - ssh:
           - #empty, will just run plain shell 
-          - . setup/setenv
