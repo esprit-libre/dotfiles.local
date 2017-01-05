@@ -112,6 +112,9 @@ cd /tmp
 sudo chown -R root:root meetfranz
 sudo mv meetfranz /opt
 
+#ansible
+sudo pip install ansible ansible-lint
+
 #Atom
 apm install language-terraform
 apm install language-tmux
