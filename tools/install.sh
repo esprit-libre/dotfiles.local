@@ -63,7 +63,7 @@ docker -v || curl -fsSL https://get.docker.com/ | sh
 #Vagrant
 mkdir -p /tmp/install_vagrant
 cd /tmp/install_vagrant
-wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb
+wget https://releases.hashicorp.com/vagrant/1.8.7/vagrant_1.8.7_x86_64.deb
 sudo dpkg -i vagrant_*.deb
 cd /tmp && rm -rf /tmp/install_vagrant
 
