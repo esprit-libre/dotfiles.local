@@ -111,3 +111,16 @@ rm -rf Franz-linux-x64-4.0.4.tgz
 cd /tmp
 sudo chown -R root:root meetfranz
 sudo mv meetfranz /opt
+
+#Atom
+apm install language-terraform
+apm install language-tmux
+apm install language-ansible
+apm install file-icons
+apm install tree-view-git-status
+apm install ansible-vault
+apm install linter-ansible-linting
+apm install Linter-Ansible-Syntax
+apm install ansible-snippets
+apm install autocomplete-ansible
+apm install railscast-theme
