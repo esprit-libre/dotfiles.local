@@ -27,6 +27,7 @@ windows:
           - vim 
         - git: 
           - workrave &
+          - . setup/setenv
           - clear
           - ginfowip
           - #empty, will just run plain shell 
@@ -35,5 +36,7 @@ windows:
       panes:
         - vagrant: 
           - #vagrant up
+          - . setup/setenv
         - ssh:
           - #empty, will just run plain shell 
+          - . setup/setenv
