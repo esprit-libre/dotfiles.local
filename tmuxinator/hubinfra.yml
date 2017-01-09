@@ -1,7 +1,7 @@
-# ~/.tmuxinator/hubsystem.yml
+# ~/.tmuxinator/hubinfra.yml
 
-name: bpifrance hubdigital system openshift
-root: ~/dev/clients/bpifrance/hubdigital/hubsystem
+name: bpifrance hubdigital infra
+root: ~/dev/clients/bpifrance/hubdigital/hubinfra
 
 
 # Optional tmux socket
