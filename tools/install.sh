@@ -127,3 +127,4 @@ apm install Linter-Ansible-Syntax
 apm install ansible-snippets
 apm install autocomplete-ansible
 apm install railscast-theme
+apm install merge-conflicts
