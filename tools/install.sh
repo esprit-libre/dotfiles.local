@@ -71,7 +71,7 @@ cd /tmp && rm -rf /tmp/install_vagrant
 sudo apt-get install libsdl1.2debian
 mkdir -p /tmp/install_virtualbox
 cd /tmp/install_virtualbox
-wget http://download.virtualbox.org/virtualbox/5.0.20/virtualbox-5.0_5.0.20-106931~Ubuntu~precise_amd64.deb
+wget http://download.virtualbox.org/virtualbox/5.1.12/virtualbox-5.1_5.1.12-112440~Ubuntu~trusty_amd64.deb
 sudo dpkg -i virtualbox*.deb
 cd /tmp && rm -rf /tmp/install_virtualbox
 
