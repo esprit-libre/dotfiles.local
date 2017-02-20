@@ -112,6 +112,12 @@ cd /tmp
 sudo chown -R root:root meetfranz
 sudo mv meetfranz /opt
 
+#multi-system
+sudo apt-add-repository 'deb http://liveusb.info/multisystem/depot all main'
+wget -q http://liveusb.info/multisystem/depot/multisystem.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install multisystem
+
 #ansible
 sudo pip install ansible ansible-lint
 
