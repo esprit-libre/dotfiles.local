@@ -122,6 +122,11 @@ sudo apt-get install multisystem
 sudo pip install ansible ansible-lint
 
 #Atom
+mkdir -p /tmp/install_atom
+cd /tmp/install_atom
+wget https://atom.io/download/deb -O atom.deb
+sudo dpkg -i *.deb
+cd /tmp && rm -rf /tmp/install_atom
 apm install language-terraform
 apm install language-tmux
 apm install language-ansible
