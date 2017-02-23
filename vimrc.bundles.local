@@ -2,7 +2,7 @@ Plug 'L9'
 " interface
 Plug 'bling/vim-airline'
 Plug 'gcmt/taboo.vim'
-Plug 'nanotech/jellybeans.vim'
+Plug 'nanotech/jellybeans.vim', { 'tag': 'v1.6' }
 Plug 'tpope/vim-vividchalk'
 Plug 'endel/vim-github-colorscheme'
 Plug 'goatslacker/mango.vim'
