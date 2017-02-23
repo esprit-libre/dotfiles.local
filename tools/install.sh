@@ -25,11 +25,11 @@ wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols
 cd $HOME/.oh-my-zsh/themes/
 curl https://gist.githubusercontent.com/cchaudier/1ac45d7a72babaafb08c/raw/808d596d63f864f7a7a8cc7c7ee6a3f5730398ae/myagnoster.zsh-theme > myagnoster.zsh-theme
 
-
-cd /tmp
-wget https://thoughtbot.github.io/rcm/debs/rcm_1.2.3-1_all.deb
-sudo dpkg -i rcm_1.2.3-1_all.deb
-rm -f rcm_1.2.3-1_all.deb
+#rcm
+wget -qO - https://apt.thoughtbot.com/thoughtbot.gpg.key | sudo apt-key add -
+echo "deb http://apt.thoughtbot.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/thoughtbot.list
+sudo apt-get update
+sudo apt-get install rcm
 cd
 if [ -d dotfiles ]; then
   cd dotfiles
@@ -38,11 +38,11 @@ else
    git clone git@github.com:thoughtbot/dotfiles.git
 fi
 cd
-rcup -d dotfiles -x README.md -x LICENSE -x Brewfile
-rcup -d dotfiles.local -x README.md -x LICENSE -x tools
+env RCRC=$HOME/dotfiles/rcrc rcup -x tools
 
 #Dev tools
 sudo apt-get install -y htop dfc git-flow python-pip
+
 #Rbenv
 cd
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
