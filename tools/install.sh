@@ -133,7 +133,8 @@ sudo apt-get update
 sudo apt-get install multisystem
 
 #ansible
-sudo pip install ansible ansible-lint
+pip install --upgrade pip
+pip install ansible ansible-lint
 
 #Atom
 mkdir -p /tmp/install_atom
