@@ -103,7 +103,7 @@ mkdir -p dev/tmp
 sudo apt-get install -y wallch
 
 #Nemo
-echo -e "\r"|sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-nightly
+echo -e "\r"|sudo add-apt-repository ppa:webupd8team/nemo
 sudo apt-get update
 sudo apt-get install nemo
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
