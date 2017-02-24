@@ -68,7 +68,7 @@ docker -v || curl -fsSL https://get.docker.com/ | sh
 #Vagrant
 mkdir -p /tmp/install_vagrant
 cd /tmp/install_vagrant
-wget https://releases.hashicorp.com/vagrant/1.8.7/vagrant_1.8.7_x86_64.deb
+wget https://releases.hashicorp.com/vagrant/1.9.1/vagrant_1.9.1_x86_64.deb
 sudo dpkg -i vagrant_*.deb
 cd /tmp && rm -rf /tmp/install_vagrant
 
@@ -76,7 +76,7 @@ cd /tmp && rm -rf /tmp/install_vagrant
 sudo apt-get install libsdl1.2debian
 mkdir -p /tmp/install_virtualbox
 cd /tmp/install_virtualbox
-wget http://download.virtualbox.org/virtualbox/5.0.20/virtualbox-5.0_5.0.20-106931~Ubuntu~precise_amd64.deb
+wget http://download.virtualbox.org/virtualbox/5.1.14/virtualbox-5.1_5.1.14-112924~Ubuntu~trusty_amd64.deb
 sudo dpkg -i virtualbox*.deb
 cd /tmp && rm -rf /tmp/install_virtualbox
 
