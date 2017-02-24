@@ -81,6 +81,6 @@ bindkey '^f' vi-forward-word
 
 #Update my dotfiles
 wrk_dir=$(pwd)
-dotl && cd tools
+cd ~/dotfiles-local && cd tools
 check_for_upgrade.sh
 cd $wrk_dir && unset wrk_dir
