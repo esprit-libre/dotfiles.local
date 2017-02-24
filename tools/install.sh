@@ -1,3 +1,6 @@
+#init
+RUBY_VERSION="2.4.0"
+
 #upgdate
 sudo apt-get update
 sudo apt-get upgrade
@@ -41,7 +44,7 @@ cd
 env RCRC=$HOME/dotfiles/rcrc rcup -x tools
 
 #Dev tools
-sudo apt-get install -y htop dfc git-flow python-pip
+sudo apt-get install -y htop dfc git-flow python-pip libssl-dev libreadline-dev zlib1g-dev
 
 #Rbenv
 cd
@@ -50,11 +53,14 @@ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-bu
 git clone https://github.com/sstephenson/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 git clone https://github.com/tarruda/zsh-autosuggestions ~/.zsh-autosuggestions
 ~/.rbenv/bin/rbenv init
-rbenv install -l
+rbenv install -l |grep $RUBY_VERSION && \
+rbenv install $RUBY_VERSION && \
+rbenv global $RUBY_VERSION
+
 
 #Tmux
 sudo apt-get install -y tmux
-sudo gem install tmuxinator
+gem install tmuxinator
 
 #tmate.io
 sudo apt-get install software-properties-common && \
