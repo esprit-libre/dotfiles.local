@@ -46,7 +46,7 @@ plugins=(git git-flow git-extra svn cp bundler gem docker common-aliases tmux tm
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=~/.rbenv/shims:$HOME/.rbenv/bin:.:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/tool_kit:$HOM/palette
+export PATH=~/.rbenv/shims:$HOME/.rbenv/bin:.:$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$HOME/tool_kit:$HOME/palette:$HOME/dotfiles-local/bin
 export SFLIB=~/.shellfactory/current/lib
 
 eval "$(rbenv init -)"
@@ -84,3 +84,6 @@ wrk_dir=$(pwd)
 cd ~/dotfiles-local && cd tools
 check_for_upgrade.sh
 cd $wrk_dir && unset wrk_dir
+
+#on_login infos
+on_login.sh
