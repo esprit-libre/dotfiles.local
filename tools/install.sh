@@ -58,7 +58,7 @@ sudo gem install tmuxinator
 
 #tmate.io
 sudo apt-get install software-properties-common && \
-sudo add-apt-repository ppa:nviennot/tmate      && \
+sudo add-apt-repository ppa:tmate.io/archive    && \
 sudo apt-get update                             && \
 sudo apt-get install tmate
 
