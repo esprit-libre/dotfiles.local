@@ -97,6 +97,7 @@ cd ~
 mkdir -p dev/clients
 mkdir -p dev/app
 mkdir -p dev/env
+mkdir -p dev/tmp
 
 #Wallpapers
 sudo apt-get install -y wallch
