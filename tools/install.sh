@@ -79,10 +79,10 @@ sudo dpkg -i vagrant_*.deb
 cd /tmp && rm -rf /tmp/install_vagrant
 
 #Virtualbox
-sudo apt-get install libsdl1.2debian
+sudo apt-get install -y libsdl1.2debian libqt5x11extras5
 mkdir -p /tmp/install_virtualbox
 cd /tmp/install_virtualbox
-wget http://download.virtualbox.org/virtualbox/5.1.14/virtualbox-5.1_5.1.14-112924~Ubuntu~trusty_amd64.deb
+wget http://download.virtualbox.org/virtualbox/5.1.14/virtualbox-5.1_5.1.14-112924~Ubuntu~xenial_amd64.deb
 sudo dpkg -i virtualbox*.deb
 cd /tmp && rm -rf /tmp/install_virtualbox
 
@@ -115,14 +115,16 @@ sudo apt-get install nemo
 xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
 
 #Franz (chat client)
-mkdir -p /tmp/meetfranz
-cd /tmp/meetfranz
-wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
-tar -xzf Franz-linux-x64-4.0.4.tgz
-rm -rf Franz-linux-x64-4.0.4.tgz
-cd /tmp
-sudo chown -R root:root meetfranz
-sudo mv meetfranz /opt
+if [[ ! -e /opt/meetfranz/Franz ]]; then
+  mkdir -p /tmp/meetfranz
+  cd /tmp/meetfranz
+  wget https://github.com/meetfranz/franz-app/releases/download/4.0.4/Franz-linux-x64-4.0.4.tgz
+  tar -xzf Franz-linux-x64-4.0.4.tgz
+  rm -rf Franz-linux-x64-4.0.4.tgz
+  cd
+  sudo chown -R root:root meetfranz
+  sudo mv meetfranz /opt
+fi
 
 #multi-system
 sudo apt-add-repository 'deb http://liveusb.info/multisystem/depot all main'
