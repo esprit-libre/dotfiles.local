@@ -3,6 +3,7 @@
 # Basic info
 HOSTNAME=$(uname -n)
 ROOT=$(df -Ph |grep /$ | awk '{print $4}')
+UPTIME=$(uptime -p | sed -e 's/up //')
 
 # System load
 MEMORY1=$(free -t -m | grep Total | awk '{print $3" MB";}')
@@ -15,6 +16,7 @@ echo "
 ===============================================
  - Hostname............: $HOSTNAME
  - Disk Space..........: $ROOT remaining
+ - Up since............: $UPTIME
 ===============================================
  - CPU usage...........: $LOAD1, $LOAD5, $LOAD15 (1, 5, 15 min)
  - Memory used.........: $MEMORY1 / $MEMORY2
