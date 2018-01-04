@@ -24,6 +24,9 @@ fc-cache -vf ~/.fonts
 mkdir -p ~/.config/fontconfig/conf.d/ && cd ~/.config/fontconfig/conf.d/
 wget https://github.com/Lokaltog/powerline/raw/develop/font/10-powerline-symbols.conf
 
+# fonts
+sudo apt install gsfonts-x11
+
 #OMZ themes
 cd $HOME/.oh-my-zsh/themes/
 curl https://gist.githubusercontent.com/cchaudier/1ac45d7a72babaafb08c/raw/808d596d63f864f7a7a8cc7c7ee6a3f5730398ae/myagnoster.zsh-theme > myagnoster.zsh-theme
@@ -57,7 +60,6 @@ rbenv install -l |grep $RUBY_VERSION && \
 rbenv install $RUBY_VERSION && \
 rbenv global $RUBY_VERSION
 
-
 #Tmux
 sudo apt-get install -y tmux
 gem install tmuxinator
@@ -82,7 +84,7 @@ cd /tmp && rm -rf /tmp/install_vagrant
 sudo apt-get install -y libsdl1.2debian libqt5x11extras5
 mkdir -p /tmp/install_virtualbox
 cd /tmp/install_virtualbox
-wget http://download.virtualbox.org/virtualbox/5.1.14/virtualbox-5.1_5.1.14-112924~Ubuntu~xenial_amd64.deb
+wget http://download.virtualbox.org/virtualbox/5.1.18/virtualbox-5.1_5.1.18-114002~Ubuntu~xenial_amd64.deb
 sudo dpkg -i virtualbox*.deb
 cd /tmp && rm -rf /tmp/install_virtualbox
 
@@ -154,3 +156,9 @@ apm install ansible-snippets
 apm install autocomplete-ansible
 apm install railscast-theme
 apm install merge-conflicts
+apm install indent-tooltip
+apm install indent-guide-improved
+apm install auto-indent
+
+#DNS utils
+sudo apt-get install dnsutils
